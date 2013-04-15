@@ -1,3 +1,22 @@
+ ##  follow: https://github.com/avodonosov/heroku-buildpack-cl2
+ ##  follow: https://github.com/avodonosov/cl-openid-demo
+
+  mjp@uberwald:~/src/cl$ git clone https://github.com/avodonosov/cl-openid-demo.git
+  mjp@uberwald:~/src/cl$ cd cl-openid-demo/
+  mjp@uberwald:~/src/cl/cl-openid-demo$ heroku create -s cedar --buildpack https://github.com/avodonosov/heroku-buildpack-cl2
+  mjp@uberwald:~/src/cl/cl-openid-demo$ git push heroku master
+
+  #   get something to work!!
+  vi ./openid-demo.lisp
+          <tr>
+              <td style="vertical-align:top; padding-top: 40px;">
+                <a href="http://lispinsmallprojects.org/" style="margin-left: 10ex"><b>day dreaming about lispInSmallProjects contest</b></a></td></tr>
+  mjp@uberwald:~/src/cl/cl-openid-demo$ git add openid-demo.lisp 
+  mjp@uberwald:~/src/cl/cl-openid-demo$ git commit -m "add line about contest" .
+  mjp@uberwald:~/src/cl/cl-openid-demo$ git push heroku master
+  # see change here: http://lit-falls-8590.herokuapp.com
+
+
 This program demonstrates how to provide OpenID login in Common Lisp web applications.
 
 See it running at Heroku: http://cl-openid-demo.herokuapp.com/
