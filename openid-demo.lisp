@@ -41,9 +41,10 @@ user account attributes, as created by MAKE-ACCOUNT."
             <td style=\"vertical-align:top; padding-top: 40px;\">
               <a href=\"/login\" style=\"margin-left: 10ex\"><b>(re)login</b></a></td></tr>
         <tr>
-            <td style="vertical-align:top; padding-top: 40px;">
-              <a href="http://lispinsmallprojects.org/" style="margin-left: 10ex"><b>day dreaming about lispInSmallProjects contest</b></a></td></tr>
-      </table></p>
+            <td style=\"vertical-align:top; padding-top: 40px;\">
+              <a href=\"http://lispinsmallprojects.org/\" style=\"margin-left: 10ex\"><b>day dreaming about lispInSmallProjects contest</b></a></td></tr>
+      </table>
+    </p>
   </body>
 </html>"
           (cur-user)))
