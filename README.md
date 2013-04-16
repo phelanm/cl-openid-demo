@@ -2,10 +2,20 @@
  ##  follow: https://github.com/avodonosov/heroku-buildpack-cl2
  ##  follow: https://github.com/avodonosov/cl-openid-demo
 
+  #   find typo
   mjp@uberwald:~/src/cl$ git clone https://github.com/avodonosov/cl-openid-demo.git
   mjp@uberwald:~/src/cl$ cd cl-openid-demo/
   mjp@uberwald:~/src/cl/cl-openid-demo$ heroku create -s cedar --buildpack https://github.com/avodonosov/heroku-buildpack-cl2
   mjp@uberwald:~/src/cl/cl-openid-demo$ git push heroku master
+  mjp@uberwald:~/src/cl/cl-openid-demo$ heroku open
+   Opening http://lit-falls-8590.herokuapp.com/
+   Application Error
+  mjp@uberwald:~/src/cl/cl-openid-demo$ heroku logs
+   ...
+   2013-04-16T02:27:42.272824+00:00 app[web.1]: ;     Stream: #<SB-SYS:FD-STREAM for "file /app/openid-demo.lisp" {10074F8073}>
+   2013-04-16T02:27:42.274362+00:00 app[web.1]: 
+   2013-04-16T02:27:42.272759+00:00 app[web.1]: ;     Line: 44, Column: 41, File-Position: 1624
+   ...
 
   #   get something to work!!
   vi ./openid-demo.lisp
