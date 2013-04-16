@@ -1,3 +1,4 @@
+```
  ##  follow: https://github.com/avodonosov/heroku-buildpack-cl2
  ##  follow: https://github.com/avodonosov/cl-openid-demo
 
@@ -26,8 +27,9 @@
    #   (use "git reset HEAD <file>..." to unstage)
    #
    #	modified:   README.md
+  mjp@uberwald:~/src/cl/cl-openid-demo$ git commit -m "update notes" .
   mjp@uberwald:~/src/cl/cl-openid-demo$ git push
-
+```
 
 This program demonstrates how to provide OpenID login in Common Lisp web applications.
 
